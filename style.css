@@ -1,0 +1,795 @@
+@font-face {
+    font-family: Bebas Neue;
+    src: url(Fonts/BebasNeue-Regular.ttf);
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+    font-weight: 1000;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(Fonts/Gilroy-Bold.otf);
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+    font-weight: 1000;
+
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(Fonts/Gilroy-Regular.otf);
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+    font-weight: 1000;
+}
+
+@font-face {
+    font-family: Bondy Quirky;
+    src: url(Fonts/BondyquirkyRegular-ywG33.otf);
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+    font-weight: 1000;
+}
+
+@font-face {
+    font-family: ItingOpti;
+    src: url(Fonts/ItingOpti-BoldCondensed.otf);
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+    font-weight: 1000;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(Fonts/Manrope-Regular.otf);
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+    font-weight: 1000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body 
+{
+    height: 100vh;
+    width: 100%;
+}
+
+#main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F0ECDC;
+}
+
+#main #main-1{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+}
+
+#main #main-1 #nav{
+    position: fixed;
+    top: 50%;
+    transform: translate(-0%,-50%);
+    height: 90vh;
+    width: 65px;
+    background-color: transparent;
+    border-right: 2px solid black;
+    z-index: 9999;
+}
+
+#main #main-1 #nav svg{
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+#main #main-1 #nav-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 4.75%;
+    top: 3.75%;
+    transform: translate(0%,0%);
+    height: 80px;
+    width: 95%;
+    z-index: 9999;
+}
+
+#main #main-1 #nav-1 #text-logo{
+    margin-top: -1.5%;
+    cursor: pointer;
+}
+
+#main #main-1 #nav-1 #text-logo #lagunitas{
+    display: flex;
+}
+
+#main #main-1 #nav-1 #text-logo #lagunitas h1{
+    font-family: ItingOpti;
+    margin: 1.5px;
+    font-weight: 400;
+    color: rgb(123, 56, 56);
+}
+
+#main #main-1 #nav-1 #text-logo #lagunitas h1:nth-child(1),:nth-child(9){
+    font-size: 50px;
+}
+
+#main #main-1 #nav-1 #text-logo #lagunitas h1:nth-child(2),:nth-child(8){
+    font-size: 45px;
+}
+
+#main #main-1 #nav-1 #text-logo #lagunitas h1:nth-child(3),:nth-child(7){
+    font-size: 40px;
+}
+
+#main #main-1 #nav-1 #text-logo #lagunitas h1:nth-child(4),:nth-child(5),:nth-child(6){
+    font-size: 36px;
+}
+
+#main #main-1 #nav-1 #text-logo #sub-head h3{
+    margin: -16px 35px;
+    font-family: Roboto Mono;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#main #main-1 #nav-1 #beer-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 140px;
+    background-color: rgb(130, 56, 56);
+    color: white;
+    font-family: Gilroy;
+    cursor: pointer;
+}
+
+
+#main #main-1 #nav-1 #beer-btn h1{
+    font-weight: 500;
+    font-size: 33px;
+    letter-spacing: 2px;
+}
+
+#main #main-1 #hoppy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 170px;
+}
+
+#main #main-1 #hoppy h1{
+    font-family: Bebas Neue;
+    font-size: 210px;
+    color: rgb(117, 140, 82);
+}
+
+#main #main-1 #bottel img{
+    position: fixed;
+    top: 55%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    rotate: 10deg;
+    height: 100%;
+    z-index: 9999;
+}
+
+#main #main-2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+}
+
+#main #main-2 #banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 52%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    height: 80vh;
+    width: 90%;
+    background-color: transparent;
+}
+
+#main #main-2 #banner #left{
+    height: 65%;
+    width: 39%;
+    background-color: transparent;
+}
+
+#main #main-2 #banner #left h2{
+    font-family: Bondy Quirky;
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#main #main-2 #banner #left #hopref {
+    margin-top: 20px;
+}
+
+#main #main-2 #banner #left #hopref h2{
+    font-family: Bebas Neue;
+    font-size: 60px;
+    letter-spacing: -2px;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+#main #main-2 #banner #left h3{
+    font-family: Bebas Neue;
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+#main #main-2 #banner #left p{
+    font-family: Manrope;
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    margin: 3px 0px;
+}
+
+#main #main-2 #banner #left #buy-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#main #main-2 #banner #left #buy-btn h4{
+    font-family: Gilroy;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#main #main-2 #banner #right{
+    height: 75%;
+    width: 30%;
+    border: 3px solid black;
+    
+    padding: 20px;
+}
+
+#main #main-2 #banner #right #indigrents{
+    margin: 10px 0px;
+}
+
+#main #main-2 #banner #right #indigrents h4{
+    font-family: Bebas Neue;
+    font-size: 20px;
+}
+
+#main #main-2 #banner #right #indigrents #line{
+   background-color: black; 
+   height: 2px;
+}
+
+#main #main-2 #banner #right #indigrents h3{
+    font-family: Bebas Neue;
+    font-size: 25px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+#main #main-2 #banner #right #indigrents #quantity{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#main #main-2 #banner #right #indigrents #quantity h4{
+    font-family: Bebas Neue;
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+#main #main-2 #banner #right #indigrents #quantity p{
+    margin: 0px 10px;
+    font-family: Manrope;
+    font-size: 13px;
+}
+
+#main #main-3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#main #main-3 #mouth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 52.25%;
+    top: 32%;
+    transform: translate(-50%,-50%);
+    height: 200px;
+    width: 90%;
+}
+
+#main #main-3 #mouth h1{
+    font-family: Bebas Neue;
+    font-size: 320px;
+    letter-spacing: 2px;
+    color: rgb(117, 140, 82);
+}
+
+#main #main-3 #video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 52.25%;
+    top: 72.5%;
+    transform: translate(-50%,-50%);
+    height: 45%;
+    width: 90%;
+    padding: 0 30px;
+}
+
+#main #main-3 #video #left-1{
+    position: relative;
+    object-position: center;
+    object-fit: cover;
+    overflow: hidden;
+    height: 82%;
+    width: 35%;
+    cursor: pointer;
+}
+
+#main #main-3 #video #left-1 img{
+    height: 80%;
+    width: 100%;
+}
+
+#main #main-3 #video #left-1 #play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: red;
+    color: white;
+}
+
+#main #main-3 #video #left-1 h4{
+    font-family: Bondy Quirky;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 300; 
+}
+
+#main #main-3 #video #right-1{
+    height: 100%;
+    width: 32%;
+    margin: 0px 70px;
+    text-align: left;
+}
+
+#main #main-3 #video #right-1 p{
+    margin: 10px 0px;
+    font-family: Manrope;
+    font-size: 13px; 
+}
+
+#main #main-3 #video #right-1 h3{
+    font-family: Bebas Neue;
+    font-size: 35px;
+    margin-top: 25px;
+    letter-spacing: 0px;
+}
+
+#main #main-4{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main #main-4 #blue-paint-1{
+    position: relative;
+    top: 12.5%;
+    left: 12.5%;
+    height: 350px;
+    width: 350px;
+}
+
+#main #main-4 #blue-paint-1 h4{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-family: Bebas Neue;
+    font-size: 35px;
+}
+
+#main #main-4 #blue-paint-1 #line-1{
+    position: absolute;
+    top: 42.5%;
+    left: 30%;
+    height: 2px;
+    width: 150px;
+    background-color: black;
+}
+
+#main #main-4 #blue-paint-1 p{
+    position: absolute;
+    top: 47.5%;
+    left: 22.5%;
+    font-family: Copyright Klim Type Foundry;
+    font-size: 15px;
+    text-align: center;
+    width: 210px;
+}
+
+#main #main-4 #blue-paint-1 img{
+    height: 100%;
+    width: 100%;
+}
+
+#main #main-4 #blue-paint-2{
+    position: relative;
+    top: 5%;
+    left: 22.5%;
+    height: 350px;
+    width: 350px;
+}
+
+#main #main-4 #blue-paint-2 h4{
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    font-family: Bebas Neue;
+    font-size: 35px;
+}
+
+#main #main-4 #blue-paint-2 #line-1{
+    position: absolute;
+    top: 42.5%;
+    left: 30%;
+    height: 2px;
+    width: 150px;
+    background-color: black;
+}
+
+#main #main-4 #blue-paint-2 p{
+    position: absolute;
+    top: 47.5%;
+    left: 22.5%;
+    font-family: Copyright Klim Type Foundry;
+    font-size: 15px;
+    text-align: center;
+    width: 210px;
+}
+
+#main #main-4 #blue-paint-2 img{
+    height: 100%;
+    width: 100%;
+}
+
+#main #main-4 #black-spalsh{
+    position: relative;
+    bottom: 90%;
+    left: 50%;
+    height: 800px;
+    width: 800px;
+    color: white;
+}
+
+#main #main-4 #black-spalsh img{
+    height: 100%;
+    width: 100%;
+}
+
+#main #main-4 #black-spalsh h4{
+    position: absolute;
+    color: white;
+    bottom: 55%;
+    left: 43.5%;
+    font-family: Bebas Neue;
+    font-size: 40px;
+}
+
+#main #main-4 #black-spalsh #line-2{
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 210px;
+    bottom: 55%;
+    left: 39%;
+}
+
+#main #main-4 #black-spalsh p{
+    position: absolute;
+    color: white;
+    bottom: 42.5%;
+    left: 39%;
+    font-family: Copyright Klim Type Foundry;
+    font-size: 15px;
+    text-align: center;
+    width: 210px;
+}
+
+#main #main-5{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main #main-5 #availability{
+    position: absolute;
+    top: 17.5%;
+    left: 51%;
+    height: 20%;
+    width: 55%;
+    transform: translate(-50%,-50%);
+}
+
+#main #main-5 #availability h3{
+    font-family: Bondy Quirky;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#main #main-5 #availability h1{
+    font-family: Bebas Neue;
+    font-size: 120px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+#main #main-5 #bottels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    height: 40%;
+    width: 90%;
+    transform: translate(-50%,-50%);
+}
+
+#main #main-5 #bottels #left-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    width: 45%; 
+}
+
+#main #main-5 #bottels #left-2 #bottel-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+}
+
+#main #main-5 #bottels #left-2 #bottel-1 img{
+    height: 100%;
+    width: 100%;
+}
+
+#main #main-5 #bottels #left-2 #bottel-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+}
+
+#main #main-5 #bottels #left-2 #bottel-2 img{
+    height: 100%;
+    width: 100%;
+}
+
+#main #main-5 #bottels #right-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    width: 46.5%; 
+}
+
+#main #main-5 #bottels #right-2 #bottel-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+}
+
+#main #main-5 #bottels #right-2 #bottel-3 img{
+    height: 100%;
+    width: 30%;
+}
+
+#main #main-5 #bottels #right-2 #bottel-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+}
+
+#main #main-5 #bottels #right-2 #bottel-4 img{
+    height: 100%;
+    width: 100%;
+}
+
+#main #main-6{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main #main-6 #footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 51%;
+    left: 52.25%;
+    transform: translate(-50%,-50%);
+    height: 60%;
+    width: 90%;
+    padding: 0px 40px;
+}
+
+#main #main-6 #footer #left-3{
+    object-fit: contain;
+    object-position: center;
+    height: 80%;
+    width: 40%;
+    overflow: hidden;
+}
+
+#main #main-6 #footer #left-3 img{
+    height: 100%;
+    width: 100%;
+}
+
+#main #main-6 #footer #right-3{
+    height: 80%;
+    width: 40%;
+}
+
+#main #main-6 #right-3 h2{
+    font-family: Bondy Quirky;
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#main #main-6 #right-3 #hopref {
+    margin-top: 20px;
+}
+
+#main #main-6 #right-3 #hopref h2{
+    font-family: Bebas Neue;
+    font-size: 60px;
+    letter-spacing: -2px;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+#main #main-6 #right-3 h3{
+    font-family: Bebas Neue;
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+#main #main-6 #right-3 p{
+    font-family: Manrope;
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    margin: 3px 0px;
+}
+
+#main #main-6 #right-3 #buy-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#main #main-6 #right-3 #buy-btn h4{
+    font-family: Gilroy;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+
+
+
+
